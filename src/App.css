@@ -1,0 +1,41 @@
+.app-wrapper {
+  display: grid;
+  grid-template-areas: 'h h'
+                       'n c';
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  gap: 10px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  width: 60px;
+}
+.avatar {
+  height: 30vmin;
+  width: 30vmin;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header {
+ grid-area: h;
+ background-color: antiquewhite;
+}
+.nav {
+grid-area: n;
+background-color: antiquewhite;
+}
+.content {
+  grid-area: c;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-template-rows: 4fr 1fr;
+  width: 1000px;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
