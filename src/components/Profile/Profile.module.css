@@ -1,0 +1,27 @@
+.avatar {
+    height: 30vmin;
+    width: 30vmin;
+    border-radius: 50%;
+    object-fit: cover;
+    grid-area: avatar;
+  }
+  .info {
+      grid-area: info;
+  }
+.entry-field {
+    grid-area: entry-field;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+ textarea {
+     width: 100%;
+     margin-top: 10px;
+ } 
+  .profile {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 300px 1fr;
+    grid-template-areas: 'avatar info'
+                         'entry-field entry-field';
+    width: 1000px;
+  }

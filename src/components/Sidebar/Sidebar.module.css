@@ -1,0 +1,19 @@
+.nav {
+    grid-area: n;
+    background-color: antiquewhite;
+    text-align: center;
+    padding-top: 30px;
+    }
+
+.nav a {
+    color: #525050;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1.75;
+}
+.nav a.activated {
+    color: #7b5303;
+}
+.link, .activated {
+    display: block;
+}

@@ -1,0 +1,27 @@
+.post .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.post {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    margin-top: 30px;
+}
+
+.message {
+    align-self: center;
+}
+
+.like {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.like span {
+    font-size: small;
+}
+.like svg {
+    width: 20px;
+}

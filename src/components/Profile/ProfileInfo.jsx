@@ -1,6 +1,7 @@
 import React from 'react';
-const Profile = () => {
-    return <div className='info'>
+import classes from './Profile.module.css'
+const ProfileInfo = () => {
+    return <div className={classes.info}>
         <h1>Inna Demidova</h1>
         <p>
             Date of Birth: 16.12.1998
@@ -15,9 +16,9 @@ const Profile = () => {
             Phone: +380506665094
         </p>
         <p>
-            Instagram: inna__demidova
+            Instagram: <a href='http://instagram.com/inna__demidova'>inna__demidova</a>
         </p>
 
     </div>
 }
-export default Profile;
+export default ProfileInfo;
