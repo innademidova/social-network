@@ -1,5 +1,4 @@
 import React from 'react';
-import { addPostActionCreator, updatePostTextActionCreator } from '../../../redux/profile-reducer';
 import classes from '../Profile.module.css';
 import Post from './Post/Post';
 const MyPosts = (props) => {
@@ -7,11 +6,11 @@ const MyPosts = (props) => {
     const newPost = React.createRef();
 
     const addPost = () => {
-        props.dispatch(addPostActionCreator())
+        props.addPost()
     }
     const onChange = () => {
         let message = newPost.current.value
-        props.dispatch(updatePostTextActionCreator(message))
+        props.updateNewPostText(message)
     }
     return <div className={classes['entry-field']}>
         <div>My Posts</div>

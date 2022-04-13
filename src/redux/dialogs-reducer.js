@@ -13,23 +13,23 @@ const initialState = {
         { id: 4, message: 'yo' }],
     newMessageText: ''
 }
-export const dialogsReducer = (state=initialState, action) => {
+export const dialogsReducer = (state = initialState, action) => {
     switch (action.type) {
-        case UPDATE_MESSAGE_TEXT:
-            state.newMessageText = action.newMessageText
-            return state;
         case SEND_MESSAGE:
             const message = {
                 id: 5,
                 message: state.newMessageText
             }
             state.messages.push(message)
-            state.newMessageText = ''
+            state.newMessageText = '';
+            return state;
+        case UPDATE_MESSAGE_TEXT:
+            state.newMessageText = action.newText
             return state;
         default:
             return state;
     }
 }
 
-export const updateMessageActionCreator = (text) => ({ type: UPDATE_MESSAGE_TEXT, newMessageText: text })
 export const sendMessageActionCreator = () => ({ type: SEND_MESSAGE })
+export const updateMessageActionCreator = (text) => ({ type: UPDATE_MESSAGE_TEXT, newText: text })
