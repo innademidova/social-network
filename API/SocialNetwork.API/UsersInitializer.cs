@@ -22,7 +22,8 @@ public static class UsersInitializer
                 {
                     City = "Kiev",
                     Country = "Ukraine"
-                }
+                },
+                FullName = "Inna"
 
             },
             new User

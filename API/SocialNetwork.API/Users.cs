@@ -18,6 +18,7 @@ public class User
     public string Status { get; set; }
 
     public bool Followed { get; set; }
+    public string FullName { get; set; }
 }
 
 public class Photos
